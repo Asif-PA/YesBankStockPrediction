@@ -29,7 +29,7 @@
 
 
 ### Output:
-- [Google Colab](Yes_Bank_Stock_Closing_Price_Prediction_Capstone_Project.ipynb) - All the outputs are visible in the provided colab notebook.
+- [Google Colab](https://colab.research.google.com/drive/1mrDz5whhaTtTux1UqBO9Rmmo-4aFjbOZ?usp=drive_link) - All the outputs are visible in the provided colab notebook.
 
 
 
@@ -86,8 +86,21 @@ Present the results of the regression analysis. Discuss the implications of the 
 
 ## :scroll: Conclusion
 
-After implementing six regression model and analyzing theri respective performance matrics we came to the conclusion that the <b>"Optimal_RandomRegression"</b> and
-<b>XGBRegressor</b> are top performing models with respect to all the matrics. But when we look for the cross validation score and other factores such as time complexity, we select the <b>Optimal_RandomForest</b> as a final deployment model.
+Stock Price prediction with the help of Machine Learning models is less time consuming and also it gives good performance.
+
+Stock price was continuously increasing till 2018 after that it decreases due to fraud case of Rana Kapoor.
+
+All independent variables (Open,High& Low) are extremely correlated with dependent variable(Close).
+
+All independent variables are highly correlated with each other(Multicollinearity)
+
+Distribution of all independent and dependent variables was right skewed and after log transformation it became Normal.
+
+I have compared 5 models(Linear Regression,Lasso Regression, Ridge Regression, Elastic Net Regression, and XGBoost Regression) on the basis of RMSE and MAPE.
+
+RMSE and MAPE are mostly used as evaluatuion metrics to measure forecast accuracy.
+
+XGBoost Regression is best model among all five models with lowest RMSE=0.0512, and MAPE=0.0175 than other models and also it has highest r2 score(r2 score=0.9859) than other models.
 
 
 ![--------------------------------------------------------------------------------------------](https://github.com/andreasbm/readme/blob/master/assets/lines/grass.png)
